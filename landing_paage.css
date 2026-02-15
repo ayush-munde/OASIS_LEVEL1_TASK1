@@ -1,0 +1,294 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: #e3fff8;
+    color: #222;
+}
+
+.container{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: #72cdb6;
+}
+
+.navbar h1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 26px;
+    color: white;
+}
+
+.navbar h1 img{
+    height: 40px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar ul li{
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover{
+    color: #003f36;
+}
+
+.btn{
+    padding: 8px 18px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    color: #72cdb6;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #003f36;
+    color: white;
+}
+
+/* =========================
+   SECTION 1 (Hero)
+========================= */
+
+.sec1div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    gap: 40px;
+}
+
+.topleft{
+    flex: 1;
+}
+
+.topleft h1{
+    font-size: 38px;
+    margin: 20px 0;
+    color: #0c6e5c;
+}
+
+.topleft p{
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.topleft img{
+    width: 80px;
+}
+
+.topright{
+    flex: 1;
+}
+
+.topright img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* =========================
+   SERVICES SECTION
+========================= */
+
+.sec2div{
+    padding: 60px;
+    text-align: center;
+}
+
+.sec2div h1{
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #0c6e5c;
+}
+
+.maindiv{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.maindiv1, .maindiv2{
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.4s;
+}
+
+.maindiv1:hover, .maindiv2:hover{
+    transform: translateY(-10px);
+}
+
+.maindiv1 h3, .maindiv2 h3{
+    margin-bottom: 15px;
+    color: #0c6e5c;
+}
+
+.maindiv1 ul, .maindiv2 ul{
+    text-align: left;
+    line-height: 1.8;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.maindiv1 button, .maindiv2 button{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #72cdb6;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.maindiv1 button:hover, .maindiv2 button:hover{
+    background: #0c6e5c;
+}
+
+/* =========================
+   SECTION 3
+========================= */
+
+.sec3{
+    text-align: center;
+    padding: 60px;
+}
+
+.sec3 img{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.sec3 p{
+    font-style: italic;
+    font-size: 18px;
+    color: #444;
+}
+
+/* =========================
+   SECTION 4
+========================= */
+
+.sec4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    gap: 40px;
+}
+
+.sec4 img{
+    width: 350px;
+    border-radius: 15px;
+}
+
+.sec4 p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* =========================
+   SECTION 5
+========================= */
+
+.sec5{
+    text-align: center;
+    padding: 60px;
+}
+
+.sec5 img{
+    width: 250px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.sec5 p{
+    font-size: 18px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+/* =========================
+   SECTION 6
+========================= */
+
+.sec6{
+    text-align: center;
+    padding: 40px;
+}
+
+.sec6 img{
+    width: 200px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #72cdb6;
+    color: white;
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media(max-width: 992px){
+
+    .sec1div,
+    .sec4{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .maindiv{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        gap: 15px;
+    }
+}
